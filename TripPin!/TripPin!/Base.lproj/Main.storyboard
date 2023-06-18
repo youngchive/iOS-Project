@@ -8,10 +8,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--StartViewController-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="TripPin_" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" userLabel="StartViewController" customClass="ViewController" customModule="TripPin_" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -31,6 +31,66 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="10" y="-27"/>
+        </scene>
+        <!--MainViewController-->
+        <scene sceneID="xsi-5Y-WHB">
+            <objects>
+                <viewController id="OUG-YB-83Z" userLabel="MainViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="6Xc-js-Ir9">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="yY6-mo-dRg"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="FNy-AU-yQ6" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="747" y="-27"/>
+        </scene>
+        <!--PlanViewController-->
+        <scene sceneID="EDF-A4-FoY">
+            <objects>
+                <viewController id="F34-v8-wzX" userLabel="PlanViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="URI-4O-j4I">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="vcj-9J-6Z7"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Vtf-Qy-b03" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1697" y="-728"/>
+        </scene>
+        <!--MapViewController-->
+        <scene sceneID="c8T-6q-WZS">
+            <objects>
+                <viewController id="4F3-g8-Q0k" userLabel="MapViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Zgg-lt-yXx">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="q47-uB-kkd"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="5KP-KH-cCs" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1697" y="-27"/>
+        </scene>
+        <!--DiaryViewController-->
+        <scene sceneID="xhG-MP-V7e">
+            <objects>
+                <viewController id="8Cm-a2-EEB" userLabel="DiaryViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Vcg-ct-45S">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="cJG-70-toi"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="wrv-c2-fHQ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1697" y="672"/>
         </scene>
     </scenes>
     <resources>
