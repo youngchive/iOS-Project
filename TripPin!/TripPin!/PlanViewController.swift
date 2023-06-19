@@ -51,7 +51,7 @@ class PlanViewController: UIViewController {
 }
 
 
-extension PlanDetailViewController: UIPickerViewDataSource, UIPickerViewDelegate{
+extension PlanViewController: UIPickerViewDataSource, UIPickerViewDelegate{
     func numberOfComponents(in pickerView: UIPickerView) -> Int {
         return 1
     }

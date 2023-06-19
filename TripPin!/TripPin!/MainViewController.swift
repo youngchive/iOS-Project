@@ -9,9 +9,11 @@ import UIKit
 import FSCalendar
 
 class MainViewController: UIViewController {
+    
     @IBOutlet weak var fsCalendar: FSCalendar!
     
     @IBOutlet weak var planGroupTableView: UITableView!
+    
     var planGroup: PlanGroup!
     var selectedDate: Date? = Date()     // 나중에 필요하다
 
@@ -64,7 +66,7 @@ class MainViewController: UIViewController {
         performSegue(withIdentifier: "AddPlan", sender: self)
     }
 }
-extension PlanGroupViewController{
+extension MainViewController{
     @IBAction func editingPlans1(_ sender: UIBarButtonItem) {
         if planGroupTableView.isEditing == true{
             planGroupTableView.isEditing = false
@@ -82,7 +84,7 @@ extension PlanGroupViewController{
 
 }
 
-extension PlanGroupViewController: UITableViewDataSource{
+extension MainViewController: UITableViewDataSource{
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         if let planGroup = planGroup{
             return planGroup.getPlans(date:selectedDate).count
@@ -112,7 +114,7 @@ extension PlanGroupViewController: UITableViewDataSource{
     
 }
 
-extension PlanGroupViewController: UITableViewDelegate{
+extension MainViewController: UITableViewDelegate{
     func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
         
         if editingStyle == .delete{
@@ -149,26 +151,26 @@ extension PlanGroupViewController: UITableViewDelegate{
 }
 
 
-extension PlanGroupViewController{
+extension MainViewController{
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         
         if segue.identifier == "ShowPlan"{
-            let planDetailViewController = segue.destination as! PlanDetailViewController
+            let planViewController = segue.destination as! PlanViewController
             // plan이 수정되면 이 saveChangeDelegate를 호출한다
-            planDetailViewController.saveChangeDelegate = saveChange
+            planViewController.saveChangeDelegate = saveChange
             
             // 선택된 row가 있어야 한다
             if let row = planGroupTableView.indexPathForSelectedRow?.row{
                 // plan을 복제하여 전달한다. 왜냐하면 수정후 취소를 할 수 있으므로
-                planDetailViewController.plan = planGroup.getPlans(date:selectedDate)[row].clone()
+                planViewController.plan = planGroup.getPlans(date:selectedDate)[row].clone()
             }
         }
         if segue.identifier == "AddPlan"{
-            let planDetailViewController = segue.destination as! PlanDetailViewController
-            planDetailViewController.saveChangeDelegate = saveChange
+            let planViewController = segue.destination as! PlanViewController
+            planViewController.saveChangeDelegate = saveChange
             
             // 빈 plan을 생성하여 전달한다
-            planDetailViewController.plan = Plan(date:selectedDate, withData: false)
+            planViewController.plan = Plan(date:selectedDate, withData: false)
             planGroupTableView.selectRow(at: nil, animated: true, scrollPosition: .none)
 
         }
@@ -190,7 +192,7 @@ extension PlanGroupViewController{
 
 }
 
-extension PlanGroupViewController: FSCalendarDelegate, FSCalendarDataSource{
+extension MainViewController: FSCalendarDelegate, FSCalendarDataSource{
     func calendar(_ calendar: FSCalendar, didSelect date: Date, at monthPosition: FSCalendarMonthPosition) {
         // 날짜가 선택되면 호출된다
         selectedDate = date.setCurrentTime()
