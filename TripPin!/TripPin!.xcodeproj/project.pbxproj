@@ -17,6 +17,15 @@
 		E047CC852A408D30002D3D29 /* PlanViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E047CC842A408D30002D3D29 /* PlanViewController.swift */; };
 		E047CC872A408D3D002D3D29 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E047CC862A408D3D002D3D29 /* MapViewController.swift */; };
 		E047CC892A408D4C002D3D29 /* DiaryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E047CC882A408D4C002D3D29 /* DiaryViewController.swift */; };
+		E047CC8B2A40BF78002D3D29 /* Owner.swift in Sources */ = {isa = PBXBuildFile; fileRef = E047CC8A2A40BF78002D3D29 /* Owner.swift */; };
+		E047CC8D2A40C082002D3D29 /* DbFirebase.swift in Sources */ = {isa = PBXBuildFile; fileRef = E047CC8C2A40C082002D3D29 /* DbFirebase.swift */; };
+		E047CC8F2A40C0A7002D3D29 /* DbMemory.swift in Sources */ = {isa = PBXBuildFile; fileRef = E047CC8E2A40C0A7002D3D29 /* DbMemory.swift */; };
+		E047CC912A40C0BD002D3D29 /* ExtendedDate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E047CC902A40C0BD002D3D29 /* ExtendedDate.swift */; };
+		E047CC932A40C0EB002D3D29 /* Plan.swift in Sources */ = {isa = PBXBuildFile; fileRef = E047CC922A40C0EB002D3D29 /* Plan.swift */; };
+		E047CC952A40C110002D3D29 /* PlanGroup.swift in Sources */ = {isa = PBXBuildFile; fileRef = E047CC942A40C110002D3D29 /* PlanGroup.swift */; };
+		E047CC972A40C1A7002D3D29 /* Database.swift in Sources */ = {isa = PBXBuildFile; fileRef = E047CC962A40C1A7002D3D29 /* Database.swift */; };
+		E047CC9A2A40C2A0002D3D29 /* FSCalendar in Frameworks */ = {isa = PBXBuildFile; productRef = E047CC992A40C2A0002D3D29 /* FSCalendar */; };
+		E047CC9D2A40C307002D3D29 /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = E047CC9C2A40C307002D3D29 /* FirebaseFirestore */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +41,13 @@
 		E047CC842A408D30002D3D29 /* PlanViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlanViewController.swift; sourceTree = "<group>"; };
 		E047CC862A408D3D002D3D29 /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
 		E047CC882A408D4C002D3D29 /* DiaryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiaryViewController.swift; sourceTree = "<group>"; };
+		E047CC8A2A40BF78002D3D29 /* Owner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Owner.swift; sourceTree = "<group>"; };
+		E047CC8C2A40C082002D3D29 /* DbFirebase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DbFirebase.swift; sourceTree = "<group>"; };
+		E047CC8E2A40C0A7002D3D29 /* DbMemory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DbMemory.swift; sourceTree = "<group>"; };
+		E047CC902A40C0BD002D3D29 /* ExtendedDate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtendedDate.swift; sourceTree = "<group>"; };
+		E047CC922A40C0EB002D3D29 /* Plan.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Plan.swift; sourceTree = "<group>"; };
+		E047CC942A40C110002D3D29 /* PlanGroup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlanGroup.swift; sourceTree = "<group>"; };
+		E047CC962A40C1A7002D3D29 /* Database.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Database.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -39,6 +55,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E047CC9A2A40C2A0002D3D29 /* FSCalendar in Frameworks */,
+				E047CC9D2A40C307002D3D29 /* FirebaseFirestore in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -75,6 +93,13 @@
 				E047CC842A408D30002D3D29 /* PlanViewController.swift */,
 				E047CC862A408D3D002D3D29 /* MapViewController.swift */,
 				E047CC882A408D4C002D3D29 /* DiaryViewController.swift */,
+				E047CC8A2A40BF78002D3D29 /* Owner.swift */,
+				E047CC8C2A40C082002D3D29 /* DbFirebase.swift */,
+				E047CC8E2A40C0A7002D3D29 /* DbMemory.swift */,
+				E047CC902A40C0BD002D3D29 /* ExtendedDate.swift */,
+				E047CC922A40C0EB002D3D29 /* Plan.swift */,
+				E047CC942A40C110002D3D29 /* PlanGroup.swift */,
+				E047CC962A40C1A7002D3D29 /* Database.swift */,
 			);
 			path = "TripPin!";
 			sourceTree = "<group>";
@@ -95,6 +120,10 @@
 			dependencies = (
 			);
 			name = "TripPin!";
+			packageProductDependencies = (
+				E047CC992A40C2A0002D3D29 /* FSCalendar */,
+				E047CC9C2A40C307002D3D29 /* FirebaseFirestore */,
+			);
 			productName = "TripPin!";
 			productReference = E047CC6B2A3B53B8002D3D29 /* TripPin!.app */;
 			productType = "com.apple.product-type.application";
@@ -123,6 +152,10 @@
 				Base,
 			);
 			mainGroup = E047CC622A3B53B8002D3D29;
+			packageReferences = (
+				E047CC982A40C2A0002D3D29 /* XCRemoteSwiftPackageReference "FSCalendar" */,
+				E047CC9B2A40C307002D3D29 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+			);
 			productRefGroup = E047CC6C2A3B53B8002D3D29 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -151,11 +184,18 @@
 			buildActionMask = 2147483647;
 			files = (
 				E047CC732A3B53B8002D3D29 /* StartViewController.swift in Sources */,
+				E047CC8B2A40BF78002D3D29 /* Owner.swift in Sources */,
+				E047CC8D2A40C082002D3D29 /* DbFirebase.swift in Sources */,
 				E047CC872A408D3D002D3D29 /* MapViewController.swift in Sources */,
+				E047CC952A40C110002D3D29 /* PlanGroup.swift in Sources */,
 				E047CC852A408D30002D3D29 /* PlanViewController.swift in Sources */,
 				E047CC892A408D4C002D3D29 /* DiaryViewController.swift in Sources */,
+				E047CC8F2A40C0A7002D3D29 /* DbMemory.swift in Sources */,
 				E047CC6F2A3B53B8002D3D29 /* AppDelegate.swift in Sources */,
+				E047CC932A40C0EB002D3D29 /* Plan.swift in Sources */,
+				E047CC912A40C0BD002D3D29 /* ExtendedDate.swift in Sources */,
 				E047CC712A3B53B8002D3D29 /* SceneDelegate.swift in Sources */,
+				E047CC972A40C1A7002D3D29 /* Database.swift in Sources */,
 				E047CC832A408D1E002D3D29 /* MainViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -374,6 +414,38 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		E047CC982A40C2A0002D3D29 /* XCRemoteSwiftPackageReference "FSCalendar" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/WenchaoD/FSCalendar.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.0.0;
+			};
+		};
+		E047CC9B2A40C307002D3D29 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 9.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		E047CC992A40C2A0002D3D29 /* FSCalendar */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = E047CC982A40C2A0002D3D29 /* XCRemoteSwiftPackageReference "FSCalendar" */;
+			productName = FSCalendar;
+		};
+		E047CC9C2A40C307002D3D29 /* FirebaseFirestore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = E047CC9B2A40C307002D3D29 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFirestore;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = E047CC632A3B53B8002D3D29 /* Project object */;
 }
