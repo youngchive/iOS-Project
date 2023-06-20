@@ -16,7 +16,7 @@ class DbFirebase: Database {
 
     required init(parentNotification: ((Plan?, DbAction?) -> Void)?) {
         self.parentNotification = parentNotification
-        reference = Firestore.firestore().collection("plans3") // 첫번째 "plans"라는 Collection
+        reference = Firestore.firestore().collection("plans") // 첫번째 "plans"라는 Collection
     }
     
     func queryPlan(fromDate: Date, toDate: Date) {

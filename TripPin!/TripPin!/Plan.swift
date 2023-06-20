@@ -11,11 +11,12 @@ import UIKit
 
 class Plan: NSObject, NSCoding{
     enum Kind: Int {
-        case Todo = 0, Meeting, Study, Etc
+        case Todo = 0, Tour, Food, Hotel, Etc
         func toString() -> String{
             switch self {
-                case .Todo: return "할일";     case .Meeting: return "미팅"
-                case .Study: return "공부";    case .Etc: return "기타"
+                case .Todo: return "할일";     case .Tour: return "관광"
+                case .Food: return "맛집";    case .Hotel: return "숙소"
+                case .Etc: return "기타"
             }
         }
         static var count: Int { return Kind.Etc.rawValue + 1}

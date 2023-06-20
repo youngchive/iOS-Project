@@ -75,4 +75,8 @@ extension Date{
         Date.dateFormatter.dateFormat = "yyyy-MM-dd HH:mm:ss"
         return Date.dateFormatter.string(from: self)
     }
+    func toStringDateTime2() -> String{
+        Date.dateFormatter.dateFormat = "yyyy-MM-dd HH:mm"
+        return Date.dateFormatter.string(from: self)
+    }
 }
