@@ -14,15 +14,9 @@ class MainViewController: UIViewController {
     
     @IBOutlet weak var planGroupTableView: UITableView!
     
-    @IBAction func checkButton(_ sender: UIButton) {
-        sender.isSelected.toggle()
-    }
-    
     var planGroup: PlanGroup!
-    var selectedDate: Date? = Date()     // 나중에 필요하다
+    var selectedDate: Date? = Date()     
 
-    
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -53,22 +47,6 @@ class MainViewController: UIViewController {
         fsCalendar.reloadData()     // 뱃지의 내용을 업데이트 한다
 
     }
-    
-//    @IBAction func editingPlans(_ sender: UIButton) {
-//        if planGroupTableView.isEditing == true{
-//            planGroupTableView.isEditing = false
-//            sender.setTitle("Edit", for: .normal)
-//        }else{
-//            planGroupTableView.isEditing = true
-//            sender.setTitle("Done", for: .normal)
-//        }
-//    }
-//
-//    @IBAction func addingPlan(_ sender: UIButton) {
-////        let plan = Plan(date: nil, withData: true)        // 가짜 데이터 생성
-////        planGroup.saveChange(plan: plan, action: .Add)    // 단지 데이터베이스에 저장만한다. 그러면 receivingNotification 함수가 호출되고 tableView.reloadData()를 호출하여 생성된 데이터가 테이블뷰에 보이게 된다.
-//        performSegue(withIdentifier: "AddPlan", sender: self)
-//    }
 }
 extension MainViewController{
     @IBAction func editingPlans1(_ sender: UIBarButtonItem) {
@@ -107,9 +85,9 @@ extension MainViewController: UITableViewDataSource{
         // 적절히 cell에 데이터를 채움
         //cell.textLabel!.text = plan.date.toStringDateTime()
         //cell.detailTextLabel?.text = plan.content
-        (cell.contentView.subviews[2] as! UILabel).text = plan.date.toStringDateTime2()
-        (cell.contentView.subviews[1] as! UILabel).text = plan.owner
-        (cell.contentView.subviews[0] as! UILabel).text = plan.content
+        (cell.contentView.subviews[1] as! UILabel).text = plan.date.toStringDateTime2()
+        (cell.contentView.subviews[0] as! UILabel).text = plan.owner
+        (cell.contentView.subviews[2] as! UILabel).text = plan.content
 
         return cell
 

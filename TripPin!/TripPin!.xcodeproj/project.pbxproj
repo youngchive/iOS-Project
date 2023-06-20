@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		E029B6402A40CC22006B10A6 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = E029B63F2A40CC22006B10A6 /* GoogleService-Info.plist */; };
+		E03906D82A41E80800670932 /* Marker.swift in Sources */ = {isa = PBXBuildFile; fileRef = E03906D72A41E80800670932 /* Marker.swift */; };
 		E047CC6F2A3B53B8002D3D29 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E047CC6E2A3B53B8002D3D29 /* AppDelegate.swift */; };
 		E047CC712A3B53B8002D3D29 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E047CC702A3B53B8002D3D29 /* SceneDelegate.swift */; };
 		E047CC732A3B53B8002D3D29 /* StartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E047CC722A3B53B8002D3D29 /* StartViewController.swift */; };
@@ -17,7 +18,6 @@
 		E047CC832A408D1E002D3D29 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E047CC822A408D1E002D3D29 /* MainViewController.swift */; };
 		E047CC852A408D30002D3D29 /* PlanViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E047CC842A408D30002D3D29 /* PlanViewController.swift */; };
 		E047CC872A408D3D002D3D29 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E047CC862A408D3D002D3D29 /* MapViewController.swift */; };
-		E047CC892A408D4C002D3D29 /* DiaryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E047CC882A408D4C002D3D29 /* DiaryViewController.swift */; };
 		E047CC8B2A40BF78002D3D29 /* Owner.swift in Sources */ = {isa = PBXBuildFile; fileRef = E047CC8A2A40BF78002D3D29 /* Owner.swift */; };
 		E047CC8D2A40C082002D3D29 /* DbFirebase.swift in Sources */ = {isa = PBXBuildFile; fileRef = E047CC8C2A40C082002D3D29 /* DbFirebase.swift */; };
 		E047CC8F2A40C0A7002D3D29 /* DbMemory.swift in Sources */ = {isa = PBXBuildFile; fileRef = E047CC8E2A40C0A7002D3D29 /* DbMemory.swift */; };
@@ -31,6 +31,7 @@
 
 /* Begin PBXFileReference section */
 		E029B63F2A40CC22006B10A6 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../GoogleService-Info.plist"; sourceTree = "<group>"; };
+		E03906D72A41E80800670932 /* Marker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Marker.swift; sourceTree = "<group>"; };
 		E047CC6B2A3B53B8002D3D29 /* TripPin!.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "TripPin!.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E047CC6E2A3B53B8002D3D29 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E047CC702A3B53B8002D3D29 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -42,7 +43,6 @@
 		E047CC822A408D1E002D3D29 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		E047CC842A408D30002D3D29 /* PlanViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlanViewController.swift; sourceTree = "<group>"; };
 		E047CC862A408D3D002D3D29 /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
-		E047CC882A408D4C002D3D29 /* DiaryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiaryViewController.swift; sourceTree = "<group>"; };
 		E047CC8A2A40BF78002D3D29 /* Owner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Owner.swift; sourceTree = "<group>"; };
 		E047CC8C2A40C082002D3D29 /* DbFirebase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DbFirebase.swift; sourceTree = "<group>"; };
 		E047CC8E2A40C0A7002D3D29 /* DbMemory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DbMemory.swift; sourceTree = "<group>"; };
@@ -95,7 +95,6 @@
 				E047CC822A408D1E002D3D29 /* MainViewController.swift */,
 				E047CC842A408D30002D3D29 /* PlanViewController.swift */,
 				E047CC862A408D3D002D3D29 /* MapViewController.swift */,
-				E047CC882A408D4C002D3D29 /* DiaryViewController.swift */,
 				E047CC8A2A40BF78002D3D29 /* Owner.swift */,
 				E047CC8C2A40C082002D3D29 /* DbFirebase.swift */,
 				E047CC8E2A40C0A7002D3D29 /* DbMemory.swift */,
@@ -103,6 +102,7 @@
 				E047CC922A40C0EB002D3D29 /* Plan.swift */,
 				E047CC942A40C110002D3D29 /* PlanGroup.swift */,
 				E047CC962A40C1A7002D3D29 /* Database.swift */,
+				E03906D72A41E80800670932 /* Marker.swift */,
 			);
 			path = "TripPin!";
 			sourceTree = "<group>";
@@ -193,7 +193,6 @@
 				E047CC872A408D3D002D3D29 /* MapViewController.swift in Sources */,
 				E047CC952A40C110002D3D29 /* PlanGroup.swift in Sources */,
 				E047CC852A408D30002D3D29 /* PlanViewController.swift in Sources */,
-				E047CC892A408D4C002D3D29 /* DiaryViewController.swift in Sources */,
 				E047CC8F2A40C0A7002D3D29 /* DbMemory.swift in Sources */,
 				E047CC6F2A3B53B8002D3D29 /* AppDelegate.swift in Sources */,
 				E047CC932A40C0EB002D3D29 /* Plan.swift in Sources */,
@@ -201,6 +200,7 @@
 				E047CC712A3B53B8002D3D29 /* SceneDelegate.swift in Sources */,
 				E047CC972A40C1A7002D3D29 /* Database.swift in Sources */,
 				E047CC832A408D1E002D3D29 /* MainViewController.swift in Sources */,
+				E03906D82A41E80800670932 /* Marker.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

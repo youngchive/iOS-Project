@@ -3,6 +3,7 @@
     <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Map view configurations" minToolsVersion="14.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -71,40 +72,32 @@
                                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="mVq-UH-BGK" translatesAutoresizingMaskIntoConstraints="NO" id="PmR-34-ghY">
                                                     <rect key="frame" x="0.0" y="0.0" width="377" height="70"/>
                                                     <subviews>
-                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MJp-Ui-Cn7">
-                                                            <rect key="frame" x="144" y="11" width="41.333333333333343" height="48"/>
-                                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                            <nil key="textColor"/>
-                                                            <nil key="highlightedColor"/>
-                                                        </label>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="Label" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="l3Y-zQ-LRY">
-                                                            <rect key="frame" x="187.33333333333337" y="11" width="167.66666666666663" height="48"/>
+                                                            <rect key="frame" x="187.33333333333337" y="13.999999999999998" width="167.66666666666663" height="20.333333333333329"/>
                                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                            <color key="textColor" systemColor="opaqueSeparatorColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Kg7-3J-37I">
+                                                            <rect key="frame" x="10" y="3.0000000000000009" width="31" height="14.333333333333336"/>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                                             <nil key="textColor"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
-                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Kg7-3J-37I">
-                                                            <rect key="frame" x="16" y="11" width="120" height="20.666666666666671"/>
-                                                            <constraints>
-                                                                <constraint firstAttribute="width" constant="120" id="BlZ-Cl-KGf"/>
-                                                            </constraints>
-                                                            <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MJp-Ui-Cn7">
+                                                            <rect key="frame" x="10" y="31" width="50" height="23"/>
+                                                            <fontDescription key="fontDescription" type="boldSystem" pointSize="19"/>
                                                             <nil key="textColor"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
                                                     </subviews>
                                                     <constraints>
-                                                        <constraint firstAttribute="bottomMargin" secondItem="l3Y-zQ-LRY" secondAttribute="bottom" id="5lR-qD-TmD"/>
-                                                        <constraint firstItem="l3Y-zQ-LRY" firstAttribute="top" secondItem="PmR-34-ghY" secondAttribute="topMargin" id="AE8-rR-TMS"/>
-                                                        <constraint firstItem="l3Y-zQ-LRY" firstAttribute="leading" secondItem="MJp-Ui-Cn7" secondAttribute="trailing" constant="2" id="CXT-8j-pz7"/>
-                                                        <constraint firstAttribute="trailingMargin" secondItem="l3Y-zQ-LRY" secondAttribute="trailing" constant="2" id="E5W-tJ-3yI"/>
-                                                        <constraint firstAttribute="height" constant="70" id="G6g-9B-DgD"/>
-                                                        <constraint firstAttribute="bottomMargin" secondItem="Kg7-3J-37I" secondAttribute="bottom" id="dyv-qk-xpU"/>
-                                                        <constraint firstItem="Kg7-3J-37I" firstAttribute="top" secondItem="PmR-34-ghY" secondAttribute="topMargin" id="epC-1j-WsU"/>
-                                                        <constraint firstItem="MJp-Ui-Cn7" firstAttribute="top" secondItem="PmR-34-ghY" secondAttribute="topMargin" id="fHk-SA-du0"/>
-                                                        <constraint firstItem="Kg7-3J-37I" firstAttribute="leading" secondItem="PmR-34-ghY" secondAttribute="leadingMargin" constant="2" id="jOG-Lb-evc"/>
-                                                        <constraint firstAttribute="bottomMargin" secondItem="MJp-Ui-Cn7" secondAttribute="bottom" id="uXT-v4-l2c"/>
-                                                        <constraint firstItem="MJp-Ui-Cn7" firstAttribute="leading" secondItem="Kg7-3J-37I" secondAttribute="trailing" constant="2" id="wRr-x0-UDv"/>
+                                                        <constraint firstItem="MJp-Ui-Cn7" firstAttribute="top" secondItem="Kg7-3J-37I" secondAttribute="bottom" constant="10" id="04K-yD-QAX"/>
+                                                        <constraint firstAttribute="trailingMargin" secondItem="l3Y-zQ-LRY" secondAttribute="trailing" constant="10" id="3z9-X4-6Hx"/>
+                                                        <constraint firstItem="Kg7-3J-37I" firstAttribute="top" secondItem="PmR-34-ghY" secondAttribute="top" constant="3" id="KNN-tS-l4i"/>
+                                                        <constraint firstAttribute="bottomMargin" secondItem="MJp-Ui-Cn7" secondAttribute="bottom" constant="3" id="PGJ-n6-1aT"/>
+                                                        <constraint firstItem="MJp-Ui-Cn7" firstAttribute="leading" secondItem="PmR-34-ghY" secondAttribute="leadingMargin" constant="5" id="ULT-Th-lFA"/>
+                                                        <constraint firstItem="l3Y-zQ-LRY" firstAttribute="centerY" secondItem="PmR-34-ghY" secondAttribute="centerY" id="cW3-DA-zOo"/>
                                                     </constraints>
                                                 </tableViewCellContentView>
                                                 <constraints>
@@ -269,52 +262,41 @@
         <!--MapViewController-->
         <scene sceneID="c8T-6q-WZS">
             <objects>
-                <viewController id="4F3-g8-Q0k" userLabel="MapViewController" sceneMemberID="viewController">
+                <viewController id="4F3-g8-Q0k" userLabel="MapViewController" customClass="MapViewController" customModule="TripPin_" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Zgg-lt-yXx">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="지도" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HwH-W3-LUV">
-                                <rect key="frame" x="175" y="318" width="30" height="21"/>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="efn-4a-xZr">
+                                <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                                <standardMapConfiguration key="preferredConfiguration"/>
+                            </mapView>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="Bw7-Bk-5PP">
+                                <rect key="frame" x="8" y="67" width="377" height="32"/>
+                                <segments>
+                                    <segment title="Standard"/>
+                                    <segment title="Hybrid"/>
+                                    <segment title="Satellite"/>
+                                </segments>
+                            </segmentedControl>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="OLE-AU-b3E"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="OLE-AU-b3E" firstAttribute="trailing" secondItem="Bw7-Bk-5PP" secondAttribute="trailing" constant="8" id="6Mu-Gn-Tcy"/>
+                            <constraint firstItem="Bw7-Bk-5PP" firstAttribute="leading" secondItem="OLE-AU-b3E" secondAttribute="leading" constant="8" id="SPg-cy-ydd"/>
+                            <constraint firstItem="Bw7-Bk-5PP" firstAttribute="top" secondItem="OLE-AU-b3E" secondAttribute="top" constant="8" id="bfv-Oi-bur"/>
+                        </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="지도" image="map.fill" catalog="system" id="S5g-JQ-j82"/>
+                    <connections>
+                        <outlet property="mapView" destination="efn-4a-xZr" id="zP2-JL-Ozn"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="5KP-KH-cCs" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2471" y="-27"/>
-        </scene>
-        <!--DiaryViewController-->
-        <scene sceneID="xhG-MP-V7e">
-            <objects>
-                <viewController id="8Cm-a2-EEB" userLabel="DiaryViewController" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="Vcg-ct-45S">
-                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="다이어리" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Aw4-4l-BOm">
-                                <rect key="frame" x="175" y="356" width="59" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                        </subviews>
-                        <viewLayoutGuide key="safeArea" id="3Ep-0l-6Vb"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                    </view>
-                    <tabBarItem key="tabBarItem" title="다이어리" image="square.and.pencil" catalog="system" id="b94-Vg-AoR"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="wrv-c2-fHQ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1691" y="537"/>
+            <point key="canvasLocation" x="2469.4656488549617" y="-27.464788732394368"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="olq-Ta-eKE">
@@ -332,7 +314,6 @@
                     <connections>
                         <segue destination="Rts-dj-KIS" kind="relationship" relationship="viewControllers" id="fi4-97-Qce"/>
                         <segue destination="4F3-g8-Q0k" kind="relationship" relationship="viewControllers" id="NSM-MO-PK0"/>
-                        <segue destination="8Cm-a2-EEB" kind="relationship" relationship="viewControllers" id="aaf-OE-Okj"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="5uS-R3-9v9" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -366,9 +347,11 @@
         <image name="calendar" catalog="system" width="128" height="107"/>
         <image name="logo" width="151.33332824707031" height="136"/>
         <image name="map.fill" catalog="system" width="128" height="110"/>
-        <image name="square.and.pencil" catalog="system" width="128" height="113"/>
         <systemColor name="labelColor">
             <color red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="opaqueSeparatorColor">
+            <color red="0.77647058823529413" green="0.77647058823529413" blue="0.78431372549019607" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
